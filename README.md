@@ -1,1 +1,1 @@
-# gan-network-experiment
+# Gan Network Experiment

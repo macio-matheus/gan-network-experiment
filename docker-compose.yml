@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  gan_network_data_science:
+    container_name: gan_network_jupyter
+    image: maciomatheus/jupyter_notebook_data_science
+    environment:
+      JUPYTER_ENABLE_LAB: 1
+      NB_UID: 10011
+      GRANT_SUDO: "yes"
+    user: root
+    ports:
+    - 8111:8888
+    - 6011:6006
+    - 5011:5000
+    volumes:
+    - ./notebooks:/home/jovyan/work
+    - ./notebooks:/home/jovyan/work/dataset
+    command: start-notebook.sh --NotebookApp.token=''

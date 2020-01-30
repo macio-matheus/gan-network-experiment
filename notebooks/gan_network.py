@@ -146,7 +146,3 @@ class GanNetwork(object):
 
         fig.savefig(f"/home/jovyan/work/dataset/{epoch}.png")
         plt.close()
-
-# if __name__ == '__main__':
-#    gan = GanNetwork()
-#    gan.train(epochs=10, batch_size=32, sample_interval=200)

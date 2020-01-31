@@ -4,15 +4,15 @@ Generative Adversary Networks (GANs) are architectures of deep neural networks c
 
 This project aims to show the application of the network in some conventional datasets.
 
-##### Basic architecture of the GAN network:
+#### Basic architecture of the GAN network:
 
 <img align="center" alt="serie" src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/docs/network-gan.png" data-canonical-src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/docs/network-gan.png" height="300" />
 
-##### Result of 1000 epochs
+#### Result of 1000 epochs
 
 <img align="center" alt="serie" src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/docs/800.png" data-canonical-src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/docs/800.png"  height="300" />
 
-##### Usage
+#### Usage
 
 ##### Run with docker compose
 

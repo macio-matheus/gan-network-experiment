@@ -21,7 +21,7 @@ This project aims to show the application of the network in some conventional da
  docker-compose up -d --build
 ```
 
-Go to #local-ip#: 8111 / lab and run the "gan-network-experiments.ipynb" notebook to observe the exploration process
+Go to #local-ip#:8111/lab and run the "gan-network-experiments.ipynb" notebook to observe the exploration process
 
 ##### TODO: 
     - Do more experiments

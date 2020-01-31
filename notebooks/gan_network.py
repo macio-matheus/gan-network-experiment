@@ -4,7 +4,7 @@ from keras.layers import Input, Dense, Reshape, Flatten
 from keras.layers import BatchNormalization
 from keras.layers.advanced_activations import LeakyReLU
 from keras.models import Sequential, Model
-from keras.optimizers import Adam
+from keras.optimizers import Adam, SGD, RMSprop
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import numpy as np
@@ -18,7 +18,7 @@ class GanNetwork(object):
         self.img_shape = (self.img_rows, self.img_cols, self.channels)
         self.latent_dim = 100
 
-        optimizer = Adam(0.0002, 0.5)
+        optimizer = RMSprop(lr=0.0008, clipvalue=1.0, decay=6e-8) #Adam(0.0002, 0.5)
 
         # Build and compile the discriminator
         self.discriminator = self._build_discriminator()
@@ -84,7 +84,7 @@ class GanNetwork(object):
 
         return Model(img, validity)
 
-    def train(self, x_train, epochs, batch_size=128, sample_interval=50):
+    def train(self, x_train, epochs, batch_size=128, sample_interval=50, path_save_image="/"):
 
         # Rescale -1 to 1
         x_train = x_train / 127.5 - 1.
@@ -124,9 +124,9 @@ class GanNetwork(object):
 
             # If at save interval => save generated image samples
             if epoch % sample_interval == 0:
-                self.sample_images(epoch)
+                self.sample_images(epoch, path_save_image)
 
-    def sample_images(self, epoch):
+    def sample_images(self, epoch, path_save_image):
         r, c = 5, 5
         noise = np.random.normal(0, 1, (r * c, self.latent_dim))
         gen_imgs = self.generator.predict(noise)
@@ -142,5 +142,5 @@ class GanNetwork(object):
                 axs[i, j].axis('off')
                 cnt += 1
 
-        fig.savefig(f"/home/jovyan/work/dataset/{epoch}.png")
+        fig.savefig(f"{path_save_image}{epoch}.png")
         plt.close()

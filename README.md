@@ -6,4 +6,4 @@ Basic architecture of the GAN network:
 
 #### Result of 1000 epochs
 
-<img align="center" alt="serie" src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/docs/800.png" data-canonical-src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/notebooks/dataset/800.png"  height="300" />
+<img align="center" alt="serie" src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/docs/800.png" data-canonical-src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/docs/800.png"  height="300" />

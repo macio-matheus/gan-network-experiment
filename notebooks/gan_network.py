@@ -5,10 +5,8 @@ from keras.layers import BatchNormalization
 from keras.layers.advanced_activations import LeakyReLU
 from keras.models import Sequential, Model
 from keras.optimizers import Adam
-
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
-
 import numpy as np
 
 

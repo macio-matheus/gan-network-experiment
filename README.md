@@ -6,19 +6,19 @@ This project aims to show the application of the network in some conventional da
 
 #### Basic architecture of the GAN network:
 
-<img align="center" alt="serie" src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/docs/network-gan.png" data-canonical-src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/docs/network-gan.png" height="300" />
+<img align="center" alt="arch" src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/docs/network-gan.png" data-canonical-src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/docs/network-gan.png" height="300" />
 
 #### Result of mnist
 
 Result after 1000 seasons in the mnist dataset
 
-<img align="center" alt="serie" src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/docs/minst.png" data-canonical-src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/docs/minst.png"  height="300" />
+<img align="center" alt="mnist" src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/docs/mnist.png" data-canonical-src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/docs/mnist.png"  height="300" />
 
 #### Result of Fashion Mnist
 
 Result after 2000 seasons in the Fashion Mnist dataset
 
-<img align="center" alt="fashion mnist" src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/docs/fashion_minst.png" data-canonical-src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/docs/fashion_minst.png"  height="300" />
+<img align="center" alt="fashion mnist" src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/docs/fashion_mnist.png" data-canonical-src="https://raw.githubusercontent.com/macio-matheus/gan-network-experiment/master/docs/fashion_mnist.png"  height="300" />
 
 #### Usage
 

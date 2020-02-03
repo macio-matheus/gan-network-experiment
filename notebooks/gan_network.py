@@ -11,19 +11,18 @@ import numpy as np
 
 
 class GanNetwork(object):
-    def __init__(self):
+    def __init__(self, optimizer=RMSprop(lr=0.0008, clipvalue=1.0, decay=6e-8)):
         self.img_rows = 28
         self.img_cols = 28
         self.channels = 1
         self.img_shape = (self.img_rows, self.img_cols, self.channels)
         self.latent_dim = 100
-
-        optimizer = RMSprop(lr=0.0008, clipvalue=1.0, decay=6e-8) #Adam(0.0002, 0.5)
+        self.optimizer = optimizer  # Adam(0.0002, 0.5)
 
         # Build and compile the discriminator
         self.discriminator = self._build_discriminator()
         self.discriminator.compile(loss='binary_crossentropy',
-                                   optimizer=optimizer,
+                                   optimizer=self.optimizer,
                                    metrics=['accuracy'])
 
         # Build the generator

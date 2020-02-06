@@ -32,4 +32,4 @@ Result after 2000 seasons in the Fashion Mnist dataset
 Go to #local-ip#:8111/lab and run the "gan-network-experiments.ipynb" notebook to observe the exploration process
 
 ##### TODO: 
-    - Do more experiments
+    - Include more experiments with different datasets
